@@ -4,7 +4,7 @@
       <h2>matt brown</h2>
     </div>
     <div class="links">
-      <a href="https://devandthedu.de" class="ui-text ui-link">blog</a>
+      <a href="https://devandthedu.de" class="ui-text ui-link" target="_blank">blog</a>
       <a class="ui-text ui-link">projects</a>
       <a href="#" class="ui-text ui-link">about</a>
     </div>
