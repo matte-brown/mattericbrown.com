@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'RightContent'
+  name: 'HeroImg'
 }
 </script>
 

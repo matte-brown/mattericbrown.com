@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <SideBar/>
-    <RightContent/>
+    <HeroImg/>
   </div>
 </template>
 
 <script>
 import SideBar from './components/SideBar.vue'
-import RightContent from './components/Content.vue'
+import HeroImg from './components/HeroImg.vue'
 
 export default {
   name: 'app',
   components: {
     SideBar,
-    RightContent
+    HeroImg
   }
 }
 </script>
