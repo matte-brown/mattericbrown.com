@@ -1,26 +1,20 @@
 <template>
   <div id="app">
-    <SideBar></SideBar>
+    <SideBar/>
+    <RightContent/>
   </div>
 </template>
 
 <script>
 import SideBar from './components/SideBar.vue'
+import RightContent from './components/Content.vue'
 
 export default {
   name: 'app',
   components: {
-    SideBar
-  },
-  mounted() {
-    const plugin = document.createElement("script");
-    plugin.setAttribute(
-      "src",
-      "./assets/js/leon.js"
-    );
-    plugin.async = true;
-    document.head.appendChild(plugin);
-  },
+    SideBar,
+    RightContent
+  }
 }
 </script>
 

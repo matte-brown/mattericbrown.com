@@ -6,12 +6,12 @@
     <div class="links">
       <a href="https://devandthedu.de" class="ui-text ui-link">blog</a>
       <a class="ui-text ui-link">projects</a>
-      <a class="ui-text ui-link">about</a>
+      <a href="#" class="ui-text ui-link">about</a>
     </div>
     <div class="footer-links">
       <a class="ui-text ui-link ui-link-sm">mattericbrown@gmail.com</a>
       <a class="ui-text ui-link ui-link-sm">@mattericbrown</a>
-      <a href="https://github.com/mattericbrown"><button class="btn btn-black ui-link-sm">|  github</button></a>
+      <a href="https://github.com/mattericbrown" class="ui-link"><button class="btn btn-black ui-link-sm">|  github</button></a>
     </div>
   </div>
 </template>
