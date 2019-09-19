@@ -112,6 +112,7 @@
     <span class="hundredeight">a</span>
     <span class="hundrednine">&nbsp;</span>
     <span class="hundredten fixed">web developer</span>
+    <span class="hundredeleven">/</span><br/>
     </p>
    </div>
   </div>
@@ -128,226 +129,228 @@ export default {
 
 //VARS for random placement of letters
 
-$rand1: random(35) + vw;
+$rand1: random(40) + vw;
 $rand1T: random(40) + vh; 
-$rand2: random(35) + vw;
+$rand2: random(40) + vw;
 $rand2T: random(40) + vh; 
-$rand3: random(35) + vw;
+$rand3: random(40) + vw;
 $rand3T: random(40) + vh; 
-$rand4: random(35) + vw;
+$rand4: random(40) + vw;
 $rand4T: random(40) + vh; 
-$rand5: random(35) + vw;
+$rand5: random(40) + vw;
 $rand5T: random(40) + vh; 
-$rand6: random(35) + vw;
+$rand6: random(40) + vw;
 $rand6T: random(40) + vh; 
-$rand7: random(35) + vw;
+$rand7: random(40) + vw;
 $rand7T: random(40) + vh; 
-$rand8: random(35) + vw;
+$rand8: random(40) + vw;
 $rand8T: random(40) + vh; 
-$rand9: random(35) + vw;
+$rand9: random(40) + vw;
 $rand9T: random(40) + vh; 
-$rand10: random(35) + vw;
+$rand10: random(40) + vw;
 $rand10T: random(40) + vh; 
-$rand11: random(35) + vw;
+$rand11: random(40) + vw;
 $rand11T: random(40) + vh; 
-$rand12: random(35) + vw;
+$rand12: random(40) + vw;
 $rand12T: random(40) + vh; 
-$rand13: random(35) + vw;
+$rand13: random(40) + vw;
 $rand13T: random(40) + vh; 
-$rand14: random(35) + vw;
+$rand14: random(40) + vw;
 $rand14T: random(40) + vh; 
-$rand15: random(35) + vw;
+$rand15: random(40) + vw;
 $rand15T: random(40) + vh; 
-$rand16: random(35) + vw;
+$rand16: random(40) + vw;
 $rand16T: random(40) + vh; 
-$rand17: random(35) + vw;
+$rand17: random(40) + vw;
 $rand17T: random(40) + vh; 
-$rand18: random(35) + vw;
+$rand18: random(40) + vw;
 $rand18T: random(40) + vh; 
-$rand19: random(35) + vw;
+$rand19: random(40) + vw;
 $rand19T: random(40) + vh; 
-$rand20: random(35) + vw;
+$rand20: random(40) + vw;
 $rand20T: random(40) + vh; 
-$rand21: random(35) + vw;
+$rand21: random(40) + vw;
 $rand21T: random(40) + vh; 
-$rand22: random(35) + vw;
+$rand22: random(40) + vw;
 $rand22T: random(40) + vh; 
-$rand23: random(35) + vw;
+$rand23: random(40) + vw;
 $rand23T: random(40) + vh; 
-$rand24: random(35) + vw;
+$rand24: random(40) + vw;
 $rand24T: random(40) + vh; 
-$rand25: random(35) + vw;
+$rand25: random(40) + vw;
 $rand25T: random(40) + vh; 
-$rand26: random(35) + vw;
+$rand26: random(40) + vw;
 $rand26T: random(40) + vh; 
-$rand27: random(35) + vw;
+$rand27: random(40) + vw;
 $rand27T: random(40) + vh; 
-$rand28: random(35) + vw;
+$rand28: random(40) + vw;
 $rand28T: random(40) + vh; 
-$rand29: random(35) + vw;
+$rand29: random(40) + vw;
 $rand29T: random(40) + vh; 
-$rand30: random(35) + vw;
+$rand30: random(40) + vw;
 $rand30T: random(40) + vh; 
-$rand31: random(35) + vw;
+$rand31: random(40) + vw;
 $rand31T: random(40) + vh; 
-$rand32: random(35) + vw;
+$rand32: random(40) + vw;
 $rand32T: random(40) + vh; 
-$rand33: random(35) + vw;
+$rand33: random(40) + vw;
 $rand33T: random(40) + vh; 
-$rand34: random(35) + vw;
+$rand34: random(40) + vw;
 $rand34T: random(40) + vh; 
-$rand35: random(35) + vw;
+$rand35: random(40) + vw;
 $rand35T: random(40) + vh; 
-$rand36: random(35) + vw;
+$rand36: random(40) + vw;
 $rand36T: random(40) + vh; 
-$rand37: random(35) + vw;
+$rand37: random(40) + vw;
 $rand37T: random(40) + vh; 
-$rand38: random(35) + vw;
+$rand38: random(40) + vw;
 $rand38T: random(40) + vh; 
-$rand39: random(35) + vw;
+$rand39: random(40) + vw;
 $rand39T: random(40) + vh; 
-$rand40: random(35) + vw;
+$rand40: random(40) + vw;
 $rand40T: random(40) + vh; 
-$rand41: random(35) + vw;
+$rand41: random(40) + vw;
 $rand41T: random(40) + vh; 
-$rand42: random(35) + vw;
+$rand42: random(40) + vw;
 $rand42T: random(40) + vh; 
-$rand43: random(35) + vw;
+$rand43: random(40) + vw;
 $rand43T: random(40) + vh; 
-$rand44: random(35) + vw;
+$rand44: random(40) + vw;
 $rand44T: random(40) + vh; 
-$rand45: random(35) + vw;
+$rand45: random(40) + vw;
 $rand45T: random(40) + vh; 
-$rand46: random(35) + vw;
+$rand46: random(40) + vw;
 $rand46T: random(40) + vh;
-$rand47: random(35) + vw;
+$rand47: random(40) + vw;
 $rand47T: random(40) + vh;
-$rand48: random(35) + vw;
+$rand48: random(40) + vw;
 $rand48T: random(40) + vh;
-$rand49: random(35) + vw;
+$rand49: random(40) + vw;
 $rand49T: random(40) + vh;
-$rand50: random(35) + vw;
+$rand50: random(40) + vw;
 $rand50T: random(40) + vh;
-$rand51: random(35) + vw;
+$rand51: random(40) + vw;
 $rand51T: random(40) + vh;
-$rand52: random(35) + vw;
+$rand52: random(40) + vw;
 $rand52T: random(40) + vh;
-$rand53: random(35) + vw;
+$rand53: random(40) + vw;
 $rand53T: random(40) + vh;
-$rand54: random(35) + vw;
+$rand54: random(40) + vw;
 $rand54T: random(40) + vh;
-$rand55: random(35) + vw;
+$rand55: random(40) + vw;
 $rand55T: random(40) + vh;
-$rand56: random(35) + vw;
+$rand56: random(40) + vw;
 $rand56T: random(40) + vh;
-$rand57: random(35) + vw;
+$rand57: random(40) + vw;
 $rand57T: random(40) + vh;
-$rand58: random(35) + vw;
+$rand58: random(40) + vw;
 $rand58T: random(40) + vh;
-$rand59: random(35) + vw;
+$rand59: random(40) + vw;
 $rand59T: random(40) + vh;
-$rand60: random(35) + vw;
+$rand60: random(40) + vw;
 $rand60T: random(40) + vh;
-$rand61: random(35) + vw;
+$rand61: random(40) + vw;
 $rand61T: random(40) + vh;
-$rand62: random(35) + vw;
+$rand62: random(40) + vw;
 $rand62T: random(40) + vh;
-$rand63: random(35) + vw;
+$rand63: random(40) + vw;
 $rand63T: random(40) + vh;
-$rand64: random(35) + vw;
+$rand64: random(40) + vw;
 $rand64T: random(40) + vh;
-$rand65: random(35) + vw;
+$rand65: random(40) + vw;
 $rand65T: random(40) + vh; 
-$rand66: random(35) + vw;
+$rand66: random(40) + vw;
 $rand66T: random(40) + vh; 
-$rand67: random(35) + vw;
+$rand67: random(40) + vw;
 $rand67T: random(40) + vh; 
-$rand68: random(35) + vw;
+$rand68: random(40) + vw;
 $rand68T: random(40) + vh; 
-$rand69: random(35) + vw;
+$rand69: random(40) + vw;
 $rand69T: random(40) + vh; 
-$rand70: random(35) + vw;
+$rand70: random(40) + vw;
 $rand70T: random(40) + vh; 
-$rand71: random(35) + vw;
+$rand71: random(40) + vw;
 $rand71T: random(40) + vh; 
-$rand72: random(35) + vw;
+$rand72: random(40) + vw;
 $rand72T: random(40) + vh; 
-$rand73: random(35) + vw;
+$rand73: random(40) + vw;
 $rand73T: random(40) + vh; 
-$rand74: random(35) + vw;
+$rand74: random(40) + vw;
 $rand74T: random(40) + vh; 
-$rand75: random(35) + vw;
+$rand75: random(40) + vw;
 $rand75T: random(40) + vh; 
-$rand76: random(35) + vw;
+$rand76: random(40) + vw;
 $rand76T: random(40) + vh; 
-$rand77: random(35) + vw;
+$rand77: random(40) + vw;
 $rand77T: random(40) + vh; 
-$rand78: random(35) + vw;
+$rand78: random(40) + vw;
 $rand78T: random(40) + vh; 
-$rand79: random(35) + vw;
+$rand79: random(40) + vw;
 $rand79T: random(40) + vh; 
-$rand80: random(35) + vw;
+$rand80: random(40) + vw;
 $rand80T: random(40) + vh; 
-$rand81: random(35) + vw;
+$rand81: random(40) + vw;
 $rand81T: random(40) + vh; 
-$rand82: random(35) + vw;
+$rand82: random(40) + vw;
 $rand82T: random(40) + vh; 
-$rand83: random(35) + vw;
+$rand83: random(40) + vw;
 $rand83T: random(40) + vh; 
-$rand84: random(35) + vw;
+$rand84: random(40) + vw;
 $rand84T: random(40) + vh; 
-$rand85: random(35) + vw;
+$rand85: random(40) + vw;
 $rand85T: random(40) + vh; 
-$rand86: random(35) + vw;
+$rand86: random(40) + vw;
 $rand86T: random(40) + vh; 
-$rand87: random(35) + vw;
+$rand87: random(40) + vw;
 $rand87T: random(40) + vh; 
-$rand88: random(35) + vw;
+$rand88: random(40) + vw;
 $rand88T: random(40) + vh; 
-$rand89: random(35) + vw;
+$rand89: random(40) + vw;
 $rand89T: random(40) + vh; 
-$rand90: random(35) + vw;
+$rand90: random(40) + vw;
 $rand90T: random(40) + vh; 
-$rand91: random(35) + vw;
+$rand91: random(40) + vw;
 $rand91T: random(40) + vh; 
-$rand92: random(35) + vw;
+$rand92: random(40) + vw;
 $rand92T: random(40) + vh; 
-$rand93: random(35) + vw;
+$rand93: random(40) + vw;
 $rand93T: random(40) + vh; 
-$rand94: random(35) + vw;
+$rand94: random(40) + vw;
 $rand94T: random(40) + vh; 
-$rand95: random(35) + vw;
+$rand95: random(40) + vw;
 $rand95T: random(40) + vh; 
-$rand96: random(35) + vw;
+$rand96: random(40) + vw;
 $rand96T: random(40) + vh; 
-$rand97: random(35) + vw;
+$rand97: random(40) + vw;
 $rand97T: random(40) + vh; 
-$rand98: random(35) + vw;
+$rand98: random(40) + vw;
 $rand98T: random(40) + vh; 
-$rand99: random(35) + vw;
+$rand99: random(40) + vw;
 $rand99T: random(40) + vh; 
-$rand100: random(35) + vw;
+$rand100: random(40) + vw;
 $rand100T: random(40) + vh; 
-$rand101: random(35) + vw;
+$rand101: random(40) + vw;
 $rand101T: random(40) + vh; 
-$rand102: random(35) + vw;
+$rand102: random(40) + vw;
 $rand102T: random(40) + vh; 
-$rand103: random(35) + vw;
+$rand103: random(40) + vw;
 $rand103T: random(40) + vh; 
-$rand104: random(35) + vw;
+$rand104: random(40) + vw;
 $rand104T: random(40) + vh; 
-$rand105: random(35) + vw;
+$rand105: random(40) + vw;
 $rand105T: random(40) + vh; 
-$rand106: random(35) + vw;
+$rand106: random(40) + vw;
 $rand106T: random(40) + vh; 
-$rand107: random(35) + vw;
+$rand107: random(40) + vw;
 $rand107T: random(40) + vh; 
-$rand108: random(35) + vw;
+$rand108: random(40) + vw;
 $rand108T: random(40) + vh; 
-$rand109: random(35) + vw;
+$rand109: random(40) + vw;
 $rand109T: random(40) + vh; 
-$rand110: random(35) + vw;
+$rand110: random(40) + vw;
 $rand110T: random(40) + vh; 
+$rand111: random(40) + vw;
+$rand111T: random(40) + vh; 
 
 
 h2 {
@@ -404,7 +407,7 @@ h2 {
   font-weight: 500;
   font-size: 2rem;
   position: absolute;
-  left: 39.5%;
+  left: 39.6%;
   top: 30vh;
 }
 
@@ -1184,6 +1187,12 @@ h2 {
       animation-iteration-count: 1;
       animation-play-state: running;	
     }
+    .hundredeleven {
+      opacity: 100;
+      animation: moveletterhundredeleven .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
   }
 }
 
@@ -1848,6 +1857,12 @@ h2 {
   position: relative;
   top: 0;
   left: 0;
+}
+
+.hundredeleven {
+  position: relative;
+  top: $rand111T;
+  left: $rand111;
 }
 
 
@@ -3501,5 +3516,19 @@ h2 {
   }
 }
 
+@keyframes moveletterhundredeleven {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand111T;
+    left: $rand111;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
 
 </style>
