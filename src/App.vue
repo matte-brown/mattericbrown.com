@@ -2,18 +2,21 @@
   <div id="app">
     <SideBar/>
     <HeroImg/>
+    <About />>
   </div>
 </template>
 
 <script>
 import SideBar from './components/SideBar.vue'
 import HeroImg from './components/HeroImg.vue'
+import About from './components/About.vue'
 
 export default {
   name: 'app',
   components: {
     SideBar,
-    HeroImg
+    HeroImg,
+    About
   }
 }
 </script>

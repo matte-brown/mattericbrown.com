@@ -1,6 +1,6 @@
 <template>
   <div class="hero-img">
-   <img src="../assets/mattcropped.jpg" />
+   <img src="../assets/mattmural.jpg" />
   </div>
 </template>
 
