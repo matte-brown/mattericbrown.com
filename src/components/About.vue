@@ -111,8 +111,34 @@
     <span class="hundredseven">&nbsp;</span>
     <span class="hundredeight">a</span>
     <span class="hundrednine">&nbsp;</span>
-    <span class="hundredten fixed">web developer</span>
+    <span class="hundredten fixed">web developer </span>
     <span class="hundredeleven">/</span><br/>
+    <span class="hundredtwelve">i</span>
+    <span class="hundredthirteen">&nbsp;</span>
+    <span class="hundredfourteen">a</span>
+    <span class="hundredfifteen">p</span>
+    <span class="hundredsixteen">p</span>
+    <span class="hundredseventeen">r</span>
+    <span class="hundredeighteen">e</span>
+    <span class="hundrednineteen">c</span>
+    <span class="hundredtwenty">i</span>
+    <span class="hundredtwentyone">a</span>
+    <span class="hundredtwentytwo">t</span>
+    <span class="hundredtwentythree">e</span>
+    <span class="hundredtwentyfour">&nbsp;</span>
+    <span class="hundredtwentyfive">m</span>
+    <span class="hundredtwentysix">e</span>
+    <span class="hundredtwentyseven">m</span>
+    <span class="hundredtwentyeight">o</span>
+    <span class="hundredtwentynine">r</span>
+    <span class="hundredthirty">a</span>
+    <span class="hundredthirtyone">b</span>
+    <span class="hundredthirtytwo">l</span>
+    <span class="hundredthirtythree">e</span>
+    <span class="hundredthirtyfour">&nbsp;</span>
+    <span class="hundredthirtyfive">u</span>
+    <span class="hundredthirtysix">x</span>
+    <span class="hundredthirtyseven"> /</span><br/>
     </p>
    </div>
   </div>
@@ -351,6 +377,58 @@ $rand110: random(40) + vw;
 $rand110T: random(40) + vh; 
 $rand111: random(40) + vw;
 $rand111T: random(40) + vh; 
+$rand112: random(40) + vw;
+$rand112T: random(40) + vh; 
+$rand113: random(40) + vw;
+$rand113T: random(40) + vh; 
+$rand114: random(40) + vw;
+$rand114T: random(40) + vh; 
+$rand115: random(40) + vw;
+$rand115T: random(40) + vh; 
+$rand116: random(40) + vw;
+$rand116T: random(40) + vh; 
+$rand117: random(40) + vw;
+$rand117T: random(40) + vh; 
+$rand118: random(40) + vw;
+$rand118T: random(40) + vh; 
+$rand119: random(40) + vw;
+$rand119T: random(40) + vh; 
+$rand120: random(40) + vw;
+$rand120T: random(40) + vh; 
+$rand121: random(40) + vw;
+$rand121T: random(40) + vh; 
+$rand122: random(40) + vw;
+$rand122T: random(40) + vh; 
+$rand123: random(40) + vw;
+$rand123T: random(40) + vh; 
+$rand124: random(40) + vw;
+$rand124T: random(40) + vh; 
+$rand125: random(40) + vw;
+$rand125T: random(40) + vh; 
+$rand126: random(40) + vw;
+$rand126T: random(40) + vh; 
+$rand127: random(40) + vw;
+$rand127T: random(40) + vh; 
+$rand128: random(40) + vw;
+$rand128T: random(40) + vh; 
+$rand129: random(40) + vw;
+$rand129T: random(40) + vh; 
+$rand130: random(40) + vw;
+$rand130T: random(40) + vh; 
+$rand131: random(40) + vw;
+$rand131T: random(40) + vh; 
+$rand132: random(40) + vw;
+$rand132T: random(40) + vh; 
+$rand133: random(40) + vw;
+$rand133T: random(40) + vh; 
+$rand134: random(40) + vw;
+$rand134T: random(40) + vh; 
+$rand135: random(40) + vw;
+$rand135T: random(40) + vh; 
+$rand136: random(40) + vw;
+$rand136T: random(40) + vh; 
+$rand137: random(40) + vw;
+$rand137T: random(40) + vh; 
 
 
 h2 {
@@ -374,6 +452,7 @@ h2 {
     line-height: 1.6rem;
     opacity: 0;
     animation: fadeinslow 3.75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+    animation-iteration-count: 1;
   }
 }
 
@@ -416,6 +495,7 @@ h2 {
   left: 40%;
   top: 58vw * 0.56;
   width: 60vw; 
+  overflow-x: hidden;
 
   &:hover {
     .one {
@@ -1193,6 +1273,162 @@ h2 {
       animation-iteration-count: 1;
       animation-play-state: running;	
     }
+    .hundredtwelve {
+      opacity: 100;
+      animation: moveletterhundredtwelve .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirteen {
+      opacity: 100;
+      animation: moveletterhundredthirteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredfourteen {
+      opacity: 100;
+      animation: moveletterhundredfourteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredfifteen {
+      opacity: 100;
+      animation: moveletterhundredfifteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredsixteen {
+      opacity: 100;
+      animation: moveletterhundredsixteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredseventeen {
+      opacity: 100;
+      animation: moveletterhundredseventeen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredeighteen {
+      opacity: 100;
+      animation: moveletterhundredeighteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundrednineteen {
+      opacity: 100;
+      animation: moveletterhundrednineteen .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwenty {
+      opacity: 100;
+      animation: moveletterhundredtwenty .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentyone {
+      opacity: 100;
+      animation: moveletterhundredtwentyone .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentytwo {
+      opacity: 100;
+      animation: moveletterhundredtwentytwo .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentythree {
+      opacity: 100;
+      animation: moveletterhundredtwentythree .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentyfour {
+      opacity: 100;
+      animation: moveletterhundredtwentyfour .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentyfive {
+      opacity: 100;
+      animation: moveletterhundredtwentyfive .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentysix {
+      opacity: 100;
+      animation: moveletterhundredtwentysix .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentyseven {
+      opacity: 100;
+      animation: moveletterhundredtwentyseven .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentyeight {
+      opacity: 100;
+      animation: moveletterhundredtwentyeight .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredtwentynine {
+      opacity: 100;
+      animation: moveletterhundredtwentynine .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirty {
+      opacity: 100;
+      animation: moveletterhundredthirty .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtyone {
+      opacity: 100;
+      animation: moveletterhundredthirtyone .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtytwo {
+      opacity: 100;
+      animation: moveletterhundredthirtytwo .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtythree {
+      opacity: 100;
+      animation: moveletterhundredthirtythree .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtyfour {
+      opacity: 100;
+      animation: moveletterhundredthirtyfour .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtyfive {
+      opacity: 100;
+      animation: moveletterhundredthirtyfive .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtysix {
+      opacity: 100;
+      animation: moveletterhundredthirtysix .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
+    .hundredthirtyseven {
+      opacity: 100;
+      animation: moveletterhundredthirtyseven .75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      animation-iteration-count: 1;
+      animation-play-state: running;	
+    }
   }
 }
 
@@ -1863,6 +2099,162 @@ h2 {
   position: relative;
   top: $rand111T;
   left: $rand111;
+}
+
+.hundredtwelve {
+  position: relative;
+  top: $rand112T;
+  left: $rand112;
+}
+
+.hundredthirteen {
+  position: relative;
+  top: $rand113T;
+  left: $rand113;
+}
+
+.hundredfourteen {
+  position: relative;
+  top: $rand114T;
+  left: $rand114;
+}
+
+.hundredfifteen {
+  position: relative;
+  top: $rand115T;
+  left: $rand115;
+}
+
+.hundredsixteen {
+  position: relative;
+  top: $rand116T;
+  left: $rand116;
+}
+
+.hundredseventeen {
+  position: relative;
+  top: $rand117T;
+  left: $rand117;
+}
+
+.hundredeighteen {
+  position: relative;
+  top: $rand118T;
+  left: $rand118;
+}
+
+.hundrednineteen {
+  position: relative;
+  top: $rand119T;
+  left: $rand119;
+}
+
+.hundredtwenty {
+  position: relative;
+  top: $rand120T;
+  left: $rand120;
+}
+
+.hundredtwentyone {
+  position: relative;
+  top: $rand121T;
+  left: $rand121;
+}
+
+.hundredtwentytwo {
+  position: relative;
+  top: $rand122T;
+  left: $rand122;
+}
+
+.hundredtwentythree {
+  position: relative;
+  top: $rand123T;
+  left: $rand123;
+}
+
+.hundredtwentyfour {
+  position: relative;
+  top: $rand124T;
+  left: $rand124;
+}
+
+.hundredtwentyfive {
+  position: relative;
+  top: $rand125T;
+  left: $rand125;
+}
+
+.hundredtwentysix {
+  position: relative;
+  top: $rand126T;
+  left: $rand126;
+}
+
+.hundredtwentyseven {
+  position: relative;
+  top: $rand127T;
+  left: $rand127;
+}
+
+.hundredtwentyeight {
+  position: relative;
+  top: $rand128T;
+  left: $rand128;
+}
+
+.hundredtwentynine {
+  position: relative;
+  top: $rand129T;
+  left: $rand129;
+}
+
+.hundredthirty {
+  position: relative;
+  top: $rand130T;
+  left: $rand130;
+}
+
+.hundredthirtyone {
+  position: relative;
+  top: $rand131T;
+  left: $rand131;
+}
+
+.hundredthirtytwo {
+  position: relative;
+  top: $rand132T;
+  left: $rand132;
+}
+
+.hundredthirtythree {
+  position: relative;
+  top: $rand133T;
+  left: $rand133;
+}
+
+.hundredthirtyfour {
+  position: relative;
+  top: $rand134T;
+  left: $rand134;
+}
+
+.hundredthirtyfive {
+  position: relative;
+  top: $rand135T;
+  left: $rand135;
+}
+
+.hundredthirtysix {
+  position: relative;
+  top: $rand136T;
+  left: $rand136;
+}
+
+.hundredthirtyseven {
+  position: relative;
+  top: $rand137T;
+  left: $rand137;
 }
 
 
@@ -3522,6 +3914,396 @@ h2 {
     position: relative;
     top: $rand111T;
     left: $rand111;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwelve {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand112T;
+    left: $rand112;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand113T;
+    left: $rand113;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredfourteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand114T;
+    left: $rand114;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredfifteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand115T;
+    left: $rand115;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredsixteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand116T;
+    left: $rand116;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredseventeen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand117T;
+    left: $rand117;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredeighteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand118T;
+    left: $rand118;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundrednineteen {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand119T;
+    left: $rand119;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwenty {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand120T;
+    left: $rand120;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentyone {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand121T;
+    left: $rand121;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentytwo {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand122T;
+    left: $rand122;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentythree {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand123T;
+    left: $rand123;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentyfour {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand124T;
+    left: $rand124;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentyfive{
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand125T;
+    left: $rand125;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentysix {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand126T;
+    left: $rand126;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentyseven {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand127T;
+    left: $rand127;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentyeight {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand128T;
+    left: $rand128;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredtwentynine {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand129T;
+    left: $rand129;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirty {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand130T;
+    left: $rand130;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtyone {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand131T;
+    left: $rand131;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtytwo {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand132T;
+    left: $rand132;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtythree {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand133T;
+    left: $rand133;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtyfour {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand134T;
+    left: $rand134;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtyfive {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand135T;
+    left: $rand135;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtysix {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand136T;
+    left: $rand136;
+  }
+  100% {
+    opacity: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes moveletterhundredthirtyseven {
+  0% {
+    opacity: 100;
+    position: relative;
+    top: $rand137T;
+    left: $rand137;
   }
   100% {
     opacity: 100;
