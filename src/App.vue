@@ -2,7 +2,8 @@
   <div id="app">
     <SideBar/>
     <HeroImg/>
-    <About />>
+    <About />
+    <Projects />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import SideBar from './components/SideBar.vue'
 import HeroImg from './components/HeroImg.vue'
 import About from './components/About.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'app',
   components: {
     SideBar,
     HeroImg,
-    About
+    About,
+    Projects
   }
 }
 </script>
