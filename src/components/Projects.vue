@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="projects-wrapper">
-    <h3 v-scroll-reveal.reset="{delay: 40}"><span class="here">Here </span>are a few of my projects</h3>
+    <h3 v-scroll-reveal.reset="{delay: 60}"><span class="here">Here </span>are a few of my projects</h3>
     <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
     <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="laptop screenshot">
     <img v-scroll-reveal.reset="{delay: 120}" class="tech rails" src="../assets/rails.png" alt="rails logo">
@@ -9,8 +9,8 @@
     <img v-scroll-reveal.reset="{delay: 160}" class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
     <img v-scroll-reveal.reset="{delay: 180}" class="tech material" src="../assets/materialize.png" alt="materialize logo">
     <div class="links">
-    <a class="project-link" v-scroll-reveal.reset="{delay: 100}" href="https://music-lovers-app.herokuapp.com/">Site</a>
-    <a class="project-link" v-scroll-reveal.reset="{delay: 100}" href="https://github.com/mattericbrown/music_lovers"><img class="github" src="../assets/github.png" alt="github logo"></a>
+    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" href="https://music-lovers-app.herokuapp.com/">Site</a>
+    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" href="https://github.com/mattericbrown/music_lovers"><img class="github" src="../assets/github.png" alt="github logo"></a>
     </div>
   </div>
   <div class="hero-img">
@@ -80,7 +80,7 @@ h3 {
 .links {
   position: absolute;
   left: 0.7vw;
-  top: 44vh;
+  top: 27vw;
 }
 
 .large-image {
