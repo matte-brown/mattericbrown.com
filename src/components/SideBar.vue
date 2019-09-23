@@ -5,8 +5,8 @@
     </div>
     <div class="links">
       <a href="https://devandthedu.de" class="ui-text ui-link" target="_blank">blog</a>
-      <a class="ui-text ui-link">projects</a>
-      <a href="#" class="ui-text ui-link">about</a>
+      <a v-scroll-to="{el: '#projects', offset: -100}" href="#projects" class="ui-text ui-link">projects</a>
+      <a v-scroll-to="'#about'" href="#" class="ui-text ui-link">about</a>
     </div>
     <div class="footer-links">
       <a class="ui-text ui-link ui-link-sm">mattericbrown@gmail.com</a>

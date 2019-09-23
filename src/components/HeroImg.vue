@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-img">
+  <div class="hero-img" id="about">
    <img src="../assets/mattmural.jpg" />
   </div>
 </template>
