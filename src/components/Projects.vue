@@ -16,23 +16,26 @@
     <img v-scroll-reveal.reset="{delay: 120}" class="tech react" src="../assets/react.png" alt="rails logo">
     <img v-scroll-reveal.reset="{delay: 140}" class="tech bs" src="../assets/bootstrap.png" alt="ruby logo">
     <img v-scroll-reveal.reset="{delay: 160}" class="tech js" src="../assets/js.png" alt="postgres logo">
+    <img v-scroll-reveal.reset="{delay: 180}" class="tech net" src="../assets/netlify.png" alt="ruby logo">
     </div>
     <div class="project-coffee-stack " v-if="three">
+    <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
+    <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/coffee-phone.jpg" alt="phone screenshot">
     <img v-scroll-reveal.reset="{delay: 120}" class="tech rails" src="../assets/rails.png" alt="rails logo">
     <img v-scroll-reveal.reset="{delay: 140}" class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
     <img v-scroll-reveal.reset="{delay: 160}" class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
     <img v-scroll-reveal.reset="{delay: 180}" class="tech material" src="../assets/materialize.png" alt="materialize logo">
     </div>
     <div class="links">
-    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" href="https://music-lovers-app.herokuapp.com/" target="_blank">Site</a>
+    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" v-bind:href="currentLink" target="_blank">Site</a>
     <a class="project-link" v-scroll-reveal.reset="{delay: 60}" v-bind:href="'https://github.com/mattericbrown/' + currentProject" target="_blank"><img class="github" src="../assets/github.png" alt="github logo"></a>
     </div>
     <div class="carosel">
-      <div class="arrow-left visible" @click='moveLeft'><div class='arrow-mask-left'></div></div>
+      <div class="arrow-left" @click='moveLeft' v-if="!one"><div class='arrow-mask-left'></div></div>
       <div class="button-active grow" id="project-one"></div>
       <div class="button-inactive" id="project-two"></div>
       <div class="button-inactive" id="project-three"></div>
-      <div class="arrow-right visible" @click='moveRight'><div class='arrow-mask-right'></div></div>
+      <div class="arrow-right" @click='moveRight' v-if="!three"><div class='arrow-mask-right'></div></div>
     </div>
   </div>
   <div class="hero-img">
@@ -41,6 +44,7 @@
   <div class="overlay-project">
 
   </div>
+
 </div>
 </template>
 
@@ -51,6 +55,7 @@ export default {
   data() {
             return {
                 currentProject: 'music_lovers',
+                currentLink: 'https://music-lovers-app.herokuapp.com/',
                 one: true,
                 two: false,
                 three: false
@@ -65,6 +70,8 @@ export default {
       if(this.one) {
         this.one = false;
         this.two = true;
+        this.currentLink = 'https://elmspeakers.com/'
+        this.currentProject = 'elm'
         projectOne.classList.remove('button-active');
         projectOne.classList.add('shrink');
         projectOne.classList.add('button-inactive');
@@ -119,7 +126,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 
 h3 {
   text-transform: uppercase;
@@ -162,6 +169,9 @@ h3 {
   top: 48%;
   left: 88px;
   transform: translate(-50%, -50%) rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .arrow-left {
@@ -172,6 +182,9 @@ h3 {
   top: 48%;
   left: -18px;
   transform: translate(-50%, -50%) rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .arrow-mask-right {
@@ -279,7 +292,7 @@ h3 {
 .links {
   position: absolute;
   left: 0.7vw;
-  top: 27vw;
+  top: 28vw;
 }
 
 .large-image {
@@ -355,6 +368,13 @@ h3 {
   height: 48px;
   width: auto;
   left: 14vw;
+  top: -16px;
+}
+
+.net {
+  height: 40px;
+  width: auto;
+  left: 16vw;
   top: -16px;
 }
 
