@@ -480,14 +480,13 @@ h2 {
   }
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 413px) {
   .description {
     display: none;
   }
   .bio {
     display: none;
   }
-
   .title {
     display: none;
   }
