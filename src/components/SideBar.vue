@@ -9,9 +9,9 @@
       <a v-scroll-to="'#about'" href="#" class="ui-text ui-link">about</a>
     </div>
     <div class="footer-links">
-      <a class="ui-text ui-link ui-link-sm">mattericbrown@gmail.com</a>
-      <a class="ui-text ui-link ui-link-sm">@mattericbrown</a>
-      <a href="https://github.com/mattericbrown" class="ui-link"><button class="btn btn-black ui-link-sm">|  github</button></a>
+      <a href="mailto: matt.eric.brown@gmail.com" class="ui-text-lower ui-link ui-link-sm">mattericbrown@gmail.com</a>
+      <a href="https://twitter.com/im_mattbrown" target="_blank" class="ui-text-lower ui-link ui-link-sm"><font-awesome-icon :icon="['fab', 'twitter']" /> im_mattbrown</a>
+      <a href="https://github.com/mattericbrown" target="_blank"  class="ui-link"><button class="btn btn-black ui-link-sm"><font-awesome-icon :icon="['fab', 'github']" /> |  github</button></a>
     </div>
   </div>
 </template>
@@ -92,6 +92,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
+
+
+
 h2 {
   position: fixed;
   font-size: 1rem;
@@ -146,6 +150,16 @@ a {
   font-weight: 400;
 }
 
+.ui-text-lower {
+    opacity: 0;
+    animation: slidein 2s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
 .ui-link-sm {
   animation: smallslidein 2.75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
   font-size: 10px;
@@ -164,9 +178,6 @@ a {
   border: none;
   border-radius: 2px;
   color: #eeECEB;
-  background-image: url(../assets/githubsmaller.png);
-  background-repeat: no-repeat;
-  background-position: left 3px center;
 }
 
 @keyframes slidein {
@@ -204,5 +215,34 @@ a {
   position: fixed;
   left: 64px;
   bottom: 30px;
+  z-index: 100;
 }
+
+@media only screen and (max-width : 375px) {
+  .title { 
+    margin-left: -35px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  .name {
+    position: relative; 
+    left: -20px;
+  }
+
+  .links {
+    position: fixed;
+    z-index: 10;
+    top: 252px;
+    left: 48px;
+  }
+
+  .footer-links {
+    position: fixed;
+    left: 48px;
+    bottom: 16px;
+    z-index: 100;
+  }
+}
+
 </style>

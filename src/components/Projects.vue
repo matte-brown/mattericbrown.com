@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="projects-wrapper">
-    <h3 v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
+    <h3 class="few" v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
     <div class="project-ml-stack visible" v-if="one">
     <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
     <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
@@ -83,6 +83,7 @@ export default {
       else if(this.two) {
         this.two = false;
         this.three = true;
+        this.currentLink = 'http://coffeefe.co'
         projectTwo.classList.remove('button-active');
         projectTwo.classList.add('shrink');
         projectTwo.classList.add('button-inactive');
@@ -100,6 +101,7 @@ export default {
       if(this.two) {
         this.two = false;
         this.one = true;
+        this.currentLink = "https://music-lovers-app.herokuapp.com/"
         projectDos.classList.remove('button-active');
         projectDos.classList.add('shrink');
         projectDos.classList.add('button-inactive');
@@ -111,6 +113,7 @@ export default {
       else if(this.three) {
         this.two = true;
         this.three = false;
+        this.currentLink = 'https://elmspeakers.com/'
         projectTres.classList.remove('button-active');
         projectTres.classList.add('shrink');
         projectTres.classList.add('button-inactive');
@@ -390,5 +393,178 @@ h3 {
   100% {
     opacity: 100;
   }
+}
+
+@media only screen and (max-width : 375px) {
+  .projects-wrapper {
+    position: absolute;
+    top: 60vh;
+    left: 10vw;
+  }
+
+  .here {
+    color: #443e3c;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .few {
+    font-size: 1.2rem;
+  }
+
+  .laptop-right {
+    position: relative;
+    width: 50vw;
+  }
+
+  .phone-right {
+    position: absolute;
+    top: 75px;
+    width: 12vw;
+  }
+
+  .project-link {
+    position: relative;
+    display: inline;
+    margin-right: 16px;
+    top: 64px;
+    color: #443e3c;
+  }
+
+  .github-link {
+    position: relative;
+    display: inline;
+  }
+
+  .github {
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: auto;
+  }
+
+  .carosel {
+    position: absolute;
+    left: 262px;
+    top: 21vw;
+    width: 90px;
+  }
+
+  #project-one {
+    margin-right: 8px;
+  }
+
+   #project-two {
+    margin-right: 8px;
+  }
+
+   #project-three {
+    margin-right: 8px;
+  }
+
+  .arrow-right {
+  width: 12px;
+  height: 12px;
+  background-color: #443e3c;
+  position: absolute;
+  top: 48%;
+  left: 62px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow-left {
+  width: 12px;
+  height: 12px;
+  background-color: #443e3c;
+  position: absolute;
+  top: 48%;
+  left: -12px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow-mask-right {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: -15%;
+  top: 15%;
+  right: 0;
+  bottom: 0%;
+}
+
+.arrow-mask-left {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 15%;
+  top: -15%;
+  right: 0%;
+  bottom: 0%;
+}
+
+  .rails {
+  height: 20px;
+  width: auto;
+  left: 16vw;
+  top: -40px;
+}
+
+.ruby {
+  height: 18px;
+  width: auto;
+  left: 12vw;
+  top: -16px;
+}
+
+.sql {
+  height: 28px;
+  width: auto;
+  left: 14vw;
+  top: -8px;
+}
+
+.material {
+  height: 28px;
+  width: auto;
+  left: 7vw;
+  top: -36px;
+}
+
+.react {
+  height: 24px;
+  width: auto;
+  left: 16vw;
+  top: -40px;
+}
+
+.bs {
+   height: 20px;
+    width: auto;
+    left: 12vw;
+    top: -16px;
+} 
+
+.js {
+  height: 24px;
+  width: auto;
+  left: 14vw;
+  top: -16px;
+}
+
+.net {
+  height: 20px;
+  width: auto;
+  left: 4vw;
+  top: -40px;
+}
 }
 </style>

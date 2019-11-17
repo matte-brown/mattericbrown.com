@@ -4,6 +4,7 @@
     <HeroImg/>
     <About />
     <Projects />
+    <Stats :data=loadData />
   </div>
 </template>
 
@@ -12,6 +13,9 @@ import SideBar from './components/SideBar.vue'
 import HeroImg from './components/HeroImg.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
+import Stats from './components/Stats.vue'
+import * as d3 from 'd3'
+
 
 export default {
   name: 'app',
@@ -19,7 +23,23 @@ export default {
     SideBar,
     HeroImg,
     About,
-    Projects
+    Projects,
+    Stats
+  },
+  data() {
+    return {
+      loadData: {}
+    }
+  },
+  mounted() {
+    console.log("app loaded");
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      let data = await d3.json("./stats.json");
+      this.loadData = data;
+    }
   }
 }
 </script>

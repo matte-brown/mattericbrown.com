@@ -480,6 +480,19 @@ h2 {
   }
 }
 
+@media only screen and (max-width : 376px) {
+  .description {
+    display: none;
+  }
+  .bio {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
 
 .title {
   color: #FFFFFF;
@@ -490,7 +503,12 @@ h2 {
   top: 30vh;
 }
 
+.bio {
+
+}
+
 .description {
+  display: block;
   position: absolute;
   left: 40%;
   top: 58vw * 0.56;

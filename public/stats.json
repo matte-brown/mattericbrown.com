@@ -1,0 +1,76 @@
+[
+  {
+    "date": "9/20/19",
+    "dotw": "Fri",
+    "time": "1:52",
+    "minutes": 112,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  },
+
+  {
+    "date": "9/21/19",
+    "dotw": "Sat",
+    "time": "0",
+    "minutes": 0,
+    "languages": [
+    ]
+  },
+
+  {
+    "date": "9/22/19",
+    "dotw": "Sun",
+    "time": "3:15",
+    "minutes": 195,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  },
+
+  {
+    "date": "9/23/19",
+    "dotw": "Mon",
+    "time": "0:58",
+    "minutes": 58,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  },
+
+  {
+    "date": "9/24/19",
+    "dotw": "Tue",
+    "time": "0:33",
+    "minutes": 33,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  },
+
+  {
+    "date": "9/25/19",
+    "dotw": "Wed",
+    "time": "0",
+    "minutes": 0,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  },
+
+  {
+    "date": "9/26/19",
+    "dotw": "Thu",
+    "time": "0:26",
+    "minutes": 26,
+    "languages": [
+      "Vue.js",
+      "JavaScript"
+    ]
+  }
+]
