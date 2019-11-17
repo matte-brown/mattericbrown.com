@@ -395,7 +395,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width : 375px) {
+@media only screen and (max-width : 413px) {
   .projects-wrapper {
     position: absolute;
     top: 60vh;

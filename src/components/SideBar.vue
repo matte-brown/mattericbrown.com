@@ -218,7 +218,7 @@ a {
   z-index: 100;
 }
 
-@media only screen and (max-width : 375px) {
+@media only screen and (max-width : 413px) {
   .title { 
     margin-left: -35px;
     position: fixed;
