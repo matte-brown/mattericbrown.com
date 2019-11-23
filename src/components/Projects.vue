@@ -306,7 +306,7 @@ h3 {
   max-width: 1000px;
   position:absolute;
   left: 40%;
-  top: 100.7vw;
+  top: 100.5vw;
   margin-right: -7px;
   margin-top: -8px;
 }
