@@ -14,7 +14,7 @@ export default {
 <style scoped>
 
 img {
-  animation: fadeinslow 3.75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+  animation: fadeinslow 2.3s cubic-bezier(.73,.01,.96,.24) 0.9s forwards;
   opacity: 0;
   width: 60%;
   height: auto;
