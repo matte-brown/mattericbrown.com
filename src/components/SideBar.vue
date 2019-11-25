@@ -47,7 +47,7 @@ function init() {
     ctx.scale(pixelRatio, pixelRatio);
 
     leon = new LeonSans({
-        text: 'full stack web\ndeveloper //\nsacramento ca',
+        text: 'front end web\ndeveloper //\nsacramento ca',
         color: ['#443e3c'],
         size: 30,
         weight: 600

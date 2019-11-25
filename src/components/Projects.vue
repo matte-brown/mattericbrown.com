@@ -1,34 +1,34 @@
 <template>
 <div>
-  <div class="projects-wrapper">
+  <div class="projects-wrapper" v-scroll-reveal.reset="{delay: 80}">
     <h3 class="few" v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
-    <div class="project-ml-stack visible" v-if="one">
-    <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
-    <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
-    <img v-scroll-reveal.reset="{delay: 120}" class="tech rails" src="../assets/rails.png" alt="rails logo">
-    <img v-scroll-reveal.reset="{delay: 140}" class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
-    <img v-scroll-reveal.reset="{delay: 160}" class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
-    <img v-scroll-reveal.reset="{delay: 180}" class="tech material" src="../assets/materialize.png" alt="materialize logo">
+    <div class="project-ml-stack visible" v-if="one" id="p1">
+      <img class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
+      <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
+      <img class="tech rails" src="../assets/rails.png" alt="rails logo">
+      <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
+      <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
+      <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
     </div>
-    <div class="project-elm-stack " v-if="two">
-    <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/elm-laptop.png" alt="laptop screenshot">
-    <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/elm-phone.jpg" alt="phone screenshot">
-    <img v-scroll-reveal.reset="{delay: 120}" class="tech react" src="../assets/react.png" alt="rails logo">
-    <img v-scroll-reveal.reset="{delay: 140}" class="tech bs" src="../assets/bootstrap.png" alt="ruby logo">
-    <img v-scroll-reveal.reset="{delay: 160}" class="tech js" src="../assets/js.png" alt="postgres logo">
-    <img v-scroll-reveal.reset="{delay: 180}" class="tech net" src="../assets/netlify.png" alt="ruby logo">
+    <div class="project-elm-stack " v-if="two" id="p2">
+      <img class="laptop-right" src="../assets/elm-laptop.png" alt="laptop screenshot">
+      <img class="phone-right" src="../assets/elm-phone.jpg" alt="phone screenshot">
+      <img class="tech react" src="../assets/react.png" alt="rails logo">
+      <img class="tech bs" src="../assets/bootstrap.png" alt="ruby logo">
+      <img class="tech js" src="../assets/js.png" alt="postgres logo">
+      <img class="tech net" src="../assets/netlify.png" alt="ruby logo">
     </div>
-    <div class="project-coffee-stack " v-if="three">
-    <img v-scroll-reveal.reset="{delay: 80}" class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
-    <img v-scroll-reveal.reset="{delay: 100}" class="phone-right" src="../assets/coffee-phone.jpg" alt="phone screenshot">
-    <img v-scroll-reveal.reset="{delay: 120}" class="tech rails" src="../assets/rails.png" alt="rails logo">
-    <img v-scroll-reveal.reset="{delay: 140}" class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
-    <img v-scroll-reveal.reset="{delay: 160}" class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
-    <img v-scroll-reveal.reset="{delay: 180}" class="tech material" src="../assets/materialize.png" alt="materialize logo">
+    <div class="project-coffee-stack " v-if="three" id="p3">
+      <img class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
+      <img class="phone-right" src="../assets/coffee-phone.jpg" alt="phone screenshot">
+      <img class="tech rails" src="../assets/rails.png" alt="rails logo">
+      <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
+      <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
+      <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
     </div>
     <div class="links">
-    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" v-bind:href="currentLink" target="_blank">Site</a>
-    <a class="project-link" v-scroll-reveal.reset="{delay: 60}" v-bind:href="'https://github.com/mattericbrown/' + currentProject" target="_blank"><img class="github" src="../assets/github.png" alt="github logo"></a>
+    <a class="project-link" v-bind:href="currentLink" target="_blank">Site</a>
+    <a class="project-link" v-bind:href="'https://github.com/mattericbrown/' + currentProject" target="_blank"><img class="github" src="../assets/github.png" alt="github logo"></a>
     </div>
     <div class="carosel">
       <div class="arrow-left" @click='moveLeft' v-if="!one"><div class='arrow-mask-left'></div></div>
@@ -77,8 +77,8 @@ export default {
         projectOne.classList.add('button-inactive');
         projectTwo.classList.remove('button-inactive');
         projectTwo.classList.remove('shrink');
-        projectTwo.classList.add('button-active')
-        projectTwo.classList.add('grow')
+        projectTwo.classList.add('button-active');
+        projectTwo.classList.add('grow');
       }
       else if(this.two) {
         this.two = false;
@@ -216,7 +216,20 @@ h3 {
   animation: grow .2s cubic-bezier(.73,.01,.96,.24) forwards;
 }
 
+.move-left {
+  animation: moveLeft 0.9s ease;
+}
 
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
 
 @keyframes grow {
   0% {
