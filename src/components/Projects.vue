@@ -579,5 +579,10 @@ h3 {
   left: 4vw;
   top: -40px;
 }
+.large-image {
+  top: 102vw;
+  margin-right: -7px;
+  margin-top: -8px;
+  }
 }
 </style>
