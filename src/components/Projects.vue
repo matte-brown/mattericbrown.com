@@ -3,20 +3,48 @@
   <div class="projects-wrapper" v-scroll-reveal.reset="{delay: 80}">
     <h3 class="few" v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
     <div class="project-ml-stack visible" v-if="one" id="p1">
-      <img class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
+      <div class="laptop">
+        <video loop autoplay class="laptop-screen">
+
+            <source src="/media/examples/flower.webm"
+                    type="video/webm">
+
+            <source src="../assets/music-lovers.mp4"
+                    type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
+      </div>
       <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
+      <div class="tech-stack">
       <img class="tech rails" src="../assets/rails.png" alt="rails logo">
       <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
       <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
       <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
+      </div>
     </div>
     <div class="project-elm-stack " v-if="two" id="p2">
-      <img class="laptop-right" src="../assets/elm-laptop.png" alt="laptop screenshot">
+      <div class="laptop">
+        <video loop autoplay class="laptop-screen">
+
+            <source src="/media/examples/flower.webm"
+                    type="video/webm">
+
+            <source src="../assets/elmspeakers.mp4"
+                    type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
+      </div>
       <img class="phone-right" src="../assets/elm-phone.jpg" alt="phone screenshot">
+      <div class="tech-stack">
       <img class="tech react" src="../assets/react.png" alt="rails logo">
       <img class="tech bs" src="../assets/bootstrap.png" alt="ruby logo">
       <img class="tech js" src="../assets/js.png" alt="postgres logo">
       <img class="tech net" src="../assets/netlify.png" alt="ruby logo">
+      </div>
     </div>
     <div class="project-coffee-stack " v-if="three" id="p3">
       <img class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
@@ -275,14 +303,26 @@ h3 {
   left: 33.7vw;
 }
 
-.laptop-right {
+.laptop {
   position: relative;
+}
+
+.laptop-right {
+  position: absolute;
   width: 30vw;
+}
+
+.laptop-screen {
+  position: absolute;
+  width: 21.9vw;
+  top: 30px;
+  left: 76px;
 }
 
 .phone-right {
   position: absolute;
   top: 112px;
+  left: 30vw;
   width: 7.81vw;
 }
 
@@ -336,6 +376,12 @@ h3 {
 
 .tech {
   position: relative;
+}
+
+.tech-stack {
+  position: absolute;
+  left: 31vw;
+  top: 180px;
 }
 
 .rails {
