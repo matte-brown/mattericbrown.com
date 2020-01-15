@@ -17,11 +17,11 @@
         <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
       </div>
       <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
-      <div class="tech-stack">
-      <img class="tech rails" src="../assets/rails.png" alt="rails logo">
-      <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
-      <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
-      <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
+        <div class="tech-stack">
+        <img class="tech rails" src="../assets/rails.png" alt="rails logo">
+        <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
+        <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
+        <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
       </div>
     </div>
     <div class="project-elm-stack " v-if="two" id="p2">
@@ -315,8 +315,8 @@ h3 {
 .laptop-screen {
   position: absolute;
   width: 21.9vw;
-  top: 30px;
-  left: 76px;
+  top: 3vh;
+  left: 4vw;
 }
 
 .phone-right {
