@@ -240,7 +240,7 @@ a {
   .footer-links {
     position: fixed;
     left: 16px;
-    bottom: 42vh;
+    bottom: 32vh;
     z-index: 100;
   }
 
