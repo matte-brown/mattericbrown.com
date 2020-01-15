@@ -477,10 +477,24 @@ h3 {
     width: 50vw;
   }
 
+  .laptop-screen {
+    position: absolute;
+    width: 36.9vw;
+    top: 1vh;
+    left: 7vw;
+  }
+
   .phone-right {
     position: absolute;
     top: 75px;
+    left: 50vw;
     width: 12vw;
+  }
+
+  .tech-stack {
+    position: absolute;
+    left: 53vw;
+    top: 158px;
   }
 
   .project-link {
