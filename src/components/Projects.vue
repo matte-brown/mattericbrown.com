@@ -67,7 +67,7 @@
     </div>
   </div>
   <div class="hero-img">
-   <img class="large-image" src="../assets/mural.jpg" />
+   <img class="large-image" src="../assets/mural.jpg" alt="image of a mural in sacramento"/>
   </div>
   <div class="overlay-project">
 

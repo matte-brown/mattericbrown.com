@@ -1,6 +1,6 @@
 <template>
   <div class="hero-img" id="about">
-   <img src="../assets/mattmural.jpg" />
+   <img src="../assets/mattmural.jpg" alt="photo of me in front of a mural"/>
   </div>
 </template>
 
