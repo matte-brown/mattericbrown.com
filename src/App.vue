@@ -4,7 +4,7 @@
     <HeroImg/>
     <About />
     <Projects />
-    <Stats :data=loadData />
+    <!-- <Stats :data=loadData /> -->
   </div>
 </template>
 
