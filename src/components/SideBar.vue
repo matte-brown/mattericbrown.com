@@ -239,10 +239,17 @@ a {
 
   .footer-links {
     position: fixed;
-    left: 48px;
-    bottom: 16px;
+    left: 16px;
+    bottom: 42vh;
     z-index: 100;
   }
+
+  .ui-link-sm {
+      animation: smallslidein 2.75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+      font-size: 8px;
+      display: block;
+      margin: 8px 0;
+    }
 }
 
 </style>
