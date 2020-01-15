@@ -6,9 +6,6 @@
       <div class="laptop">
         <video loop autoplay class="laptop-screen">
 
-            <source src="/media/examples/flower.webm"
-                    type="video/webm">
-
             <source src="../assets/music-lovers.mp4"
                     type="video/mp4">
 
@@ -27,9 +24,6 @@
     <div class="project-elm-stack " v-if="two" id="p2">
       <div class="laptop">
         <video loop autoplay class="laptop-screen">
-
-            <source src="/media/examples/flower.webm"
-                    type="video/webm">
 
             <source src="../assets/elmspeakers.mp4"
                     type="video/mp4">
