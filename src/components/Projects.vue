@@ -34,19 +34,18 @@
       </div>
       <img class="phone-right" src="../assets/elm-phone.jpg" alt="phone screenshot">
       <div class="tech-stack">
-      <img class="tech react" src="../assets/react.png" alt="rails logo">
-      <img class="tech bs" src="../assets/bootstrap.png" alt="ruby logo">
-      <img class="tech js" src="../assets/js.png" alt="postgres logo">
-      <img class="tech net" src="../assets/netlify.png" alt="ruby logo">
+      <img class="tech react" src="../assets/react.png" alt="react logo">
+      <img class="tech bs" src="../assets/bootstrap.png" alt="bootstrap logo">
+      <img class="tech js" src="../assets/js.png" alt="javascript logo">
+      <img class="tech net" src="../assets/netlify.png" alt="netlify logo">
       </div>
     </div>
     <div class="project-coffee-stack " v-if="three" id="p3">
       <img class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
       <img class="phone-right" src="../assets/coffee-phone.jpg" alt="phone screenshot">
-      <img class="tech rails" src="../assets/rails.png" alt="rails logo">
-      <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
-      <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
-      <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
+      <div class="tech-stack">
+      <img class="tech rails" src="../assets/wpLogo.png" alt="wordpress logo">
+      </div>
     </div>
     <div class="links">
     <a class="project-link" v-bind:href="currentLink" target="_blank">Site</a>
