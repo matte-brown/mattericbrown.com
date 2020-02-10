@@ -35,16 +35,16 @@ const sh = 340;
 const pixelRatio = 2;
 
 function init() {
-    let colorArray = [['#443e3c'], ['#c5d73f', '#9d529c', '#49a9db', '#fec330', '#5eb96e', '#fc5356', '#f38f31']];
+    // let colorArray = [['#443e3c'], ['#c5d73f', '#9d529c', '#49a9db', '#fec330', '#5eb96e', '#fc5356', '#f38f31']];
 
-    let colorArrayIndex;
+    // let colorArrayIndex;
 
-    let colorForText = function(){
-      let colorArrayIndex = Math.round(Math.random() * Math.floor(1));
+    // let colorForText = function(){
+    //   let colorArrayIndex = Math.round(Math.random() * Math.floor(1));
 
-      console.log(colorArrayIndex);
-      return colorArrayIndex;
-    }
+    //   console.log(colorArrayIndex);
+    //   return colorArrayIndex;
+    // }
 
 
     canvas = document.createElement('canvas');
@@ -62,7 +62,7 @@ function init() {
         text: 'front end web\ndeveloper //\nsacramento ca',
         color: ['#806b3d', '#2b7692', '#644f43', '#1e2730'],
         size: 30,
-        weight: 600
+        weight: 700
     });
 
     let i, total = leon.drawing.length;

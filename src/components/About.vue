@@ -510,7 +510,7 @@ h2 {
   display: block;
   position: absolute;
   left: 40%;
-  top: 58vw * 0.56;
+  top: 58vw * 0.59;
   width: 60vw; 
   overflow-x: hidden;
 
