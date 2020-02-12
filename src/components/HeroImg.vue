@@ -163,6 +163,7 @@ img {
   height: auto;
   width: 10%;
   display: inline-block;
+  background-color: green;
   
   &__side {
     
@@ -172,13 +173,12 @@ img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-    transition: all 1s;
     
 
     &--front {
       // width: 100%;
       display: inline-block;
-      transform: rotateY(0);
+      
     }
 
     &--back {
@@ -188,60 +188,7 @@ img {
     }
   }
 
-  // &__picture {
-  //   background-size: cover;
-  //   height: 100%;
-  //   width: 100%;
-    
-  //   &--1 {
-  //       background-image: url(../assets/MattMural1.jpg)
-  //   }
-
-  //   &--2 {
-  //     background-image: url(../assets/MattMural2.jpg)
-  //   }
-
-  //   &--3 {
-  //     background-image: url(../assets/MattMural3.jpg)
-  //   }
-
-  //   &--4 {
-  //     background-image: url(../assets/MattMural4.jpg)
-  //   }
-
-  //   &--5 {
-  //     background-image: url(../assets/MattMural5.jpg)
-  //   }
-
-  //   &--6 {
-  //     background-image: url(../assets/MattMural6.jpg)
-  //   }
-
-  //   &--7 {
-  //     background-image: url(../assets/MattMural7.jpg)
-  //   }
-
-  //   &--8 {
-  //     background-image: url(../assets/MattMural8.jpg)
-  //   }
-
-  //   &--9 {
-  //     background-image: url(../assets/MattMural9.jpg)
-  //   }
-
-  //   &--10 {
-  //   background-image: url(../assets/MattMural10.jpg)
-  //   }
-
-  // }
-
-  &:hover &__side--front {
-    transform: rotateY(180deg);
-  }
-
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
+  
 }
 
 .hero-img {
@@ -252,108 +199,166 @@ img {
   height: auto;
   left: 40%;
   max-width: 1000px;
-  margin-right: -7px;
-  margin-top: -8px;
+  margin-top: -22px;
 
   &:hover{
     .one {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.1s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0s forwards;
+        
       }
     }
     .two {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.2s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.1s forwards;
+        
       }
     }
     .three {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.3s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.2s forwards;
+        
       }
     }
     .four {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.4s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.3s forwards;
+        
       }
     }
     .five {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.5s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.4s forwards;
+        
       }
     }
     .six {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.6s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.5s forwards;
+        
       }
     }
     .seven {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.7s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.6s forwards;
+        
       }
     }
     .eight {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.8s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.7s forwards;
+        
       }
     }
     .nine {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 0.9s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in 0.8s forwards;
+        
       }
     }
     .ten {
-      transition: transform 2s ease-in;
+      // transition: transform 2s ease-in;
       .card__side--front {
-        transform: rotateY(180deg);
+        // transform: rotateY(180deg);
+        // transform: rotateY(0);
+        animation: flip-front 0.5s ease-in 1s forwards;
+        
       }
 
       .card__side--back {
-        transform: rotateY(0);
+        // transform: rotateY(0);
+        // transform: rotateY(-180deg);
+        animation: flip-back 0.5s ease-in .9s forwards; 
       }     
     }
   }
@@ -373,13 +378,23 @@ img {
   }
 }
 
-@keyframes flip {
+@keyframes flip-front {
   0% {
     transform: rotateY(0);
   }
 
   100% {
     transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-back {
+  0% {
+    transform: rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateY(0);
   }
 }
 </style>

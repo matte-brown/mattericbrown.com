@@ -3,7 +3,7 @@
   <div class="projects-wrapper" v-scroll-reveal.reset="{delay: 80}">
     <h3 class="few" v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
     <div class="project-ml-stack visible" v-if="one" id="p1">
-      <div class="laptop">
+      <!-- <div class="laptop">
         <video loop autoplay class="laptop-screen">
 
             <source src="../assets/music-lovers.mp4"
@@ -12,7 +12,8 @@
             Sorry, your browser doesn't support embedded videos.
         </video>
         <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
-      </div>
+      </div> -->
+      <img class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
       <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
         <div class="tech-stack">
         <img class="tech rails" src="../assets/rails.png" alt="rails logo">

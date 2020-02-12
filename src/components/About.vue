@@ -451,7 +451,7 @@ h2 {
     letter-spacing: 1.07px;
     line-height: 1.6rem;
     opacity: 0;
-    animation: fadeinslow 3.75s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
+    animation: fadeinslow 3s cubic-bezier(.73,.01,.96,.24) 0.3s forwards;
     animation-iteration-count: 1;
   }
 }
