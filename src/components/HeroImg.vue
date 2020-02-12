@@ -196,7 +196,7 @@ img {
   opacity: 0;
   position:absolute;
   width: 60vw;
-  height: auto;
+  height: 38vw;
   left: 40%;
   max-width: 1000px;
   margin-top: -22px;
