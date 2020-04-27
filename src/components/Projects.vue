@@ -512,8 +512,8 @@ h3 {
 
   .tech-stack {
     position: absolute;
-    left: 53vw;
-    top: 158px;
+    left: 35%;
+    top: 60vw
   }
 
   .project-link {
@@ -538,8 +538,8 @@ h3 {
 
   .carosel {
     position: absolute;
-    left: 262px;
-    top: 21vw;
+    left: 25%;
+    top: 55vw;
     width: 90px;
   }
 
@@ -603,6 +603,26 @@ h3 {
   bottom: 0%;
 }
 
+  .gql {
+     height: 20px;
+    width: auto;
+    left: 16vw;
+    top: -36px;
+  }
+
+  .ts {
+    height: 20px;
+  width: auto;
+  left: 12vw;
+  top: -16px;
+  }
+
+  .styled {
+    height: 20px;
+    width: auto;
+    left: 0;
+    top: -16px;
+  }
   .rails {
   height: 20px;
   width: auto;
