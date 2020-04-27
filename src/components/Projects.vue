@@ -13,6 +13,16 @@
         </video>
         <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
       </div> -->
+      <img class="laptop-right" src="../assets/developersquiz-laptop.png" alt="laptop screenshot">
+      <img class="phone-right" src="../assets/developers-phone.jpg" alt="phone screenshot">
+        <div class="tech-stack">
+        <img class="tech react" src="../assets/react.png" alt="rails logo">
+        <img class="tech gql" src="../assets/graphqlPink.png" alt="ruby logo">
+        <img class="tech ts" src="../assets/ts.png" alt="postgres logo">
+        <img class="tech styled" src="../assets/styledComponentsLogo.png" alt="materialize logo">
+      </div>
+    </div>
+    <div class="project-elm-stack " v-if="two" id="p2">
       <img class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
       <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
         <div class="tech-stack">
@@ -21,8 +31,9 @@
         <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
         <img class="tech material" src="../assets/materialize.png" alt="materialize logo">
       </div>
+      
     </div>
-    <div class="project-elm-stack " v-if="two" id="p2">
+    <div class="project-coffee-stack " v-if="three" id="p3">
       <div class="laptop">
         <video loop autoplay class="laptop-screen">
 
@@ -39,13 +50,6 @@
       <img class="tech bs" src="../assets/bootstrap.png" alt="bootstrap logo">
       <img class="tech js" src="../assets/js.png" alt="javascript logo">
       <img class="tech net" src="../assets/netlify.png" alt="netlify logo">
-      </div>
-    </div>
-    <div class="project-coffee-stack " v-if="three" id="p3">
-      <img class="laptop-right" src="../assets/coffee.png" alt="laptop screenshot">
-      <img class="phone-right" src="../assets/coffee-phone.jpg" alt="phone screenshot">
-      <div class="tech-stack">
-      <img class="tech rails" src="../assets/wpLogo.png" alt="wordpress logo">
       </div>
     </div>
     <div class="links">
@@ -76,8 +80,8 @@ export default {
   name: 'Projects',
   data() {
             return {
-                currentProject: 'music_lovers',
-                currentLink: 'https://music-lovers-app.herokuapp.com/',
+                currentProject: 'developer-quiz',
+                currentLink: 'http://www.developersquiz.com/',
                 one: true,
                 two: false,
                 three: false
@@ -92,8 +96,8 @@ export default {
       if(this.one) {
         this.one = false;
         this.two = true;
-        this.currentLink = 'https://elmspeakers.com/'
-        this.currentProject = 'elm'
+        this.currentLink = 'https://music-lovers-app.herokuapp.com/'
+        this.currentProject = 'music_lovers'
         projectOne.classList.remove('button-active');
         projectOne.classList.add('shrink');
         projectOne.classList.add('button-inactive');
@@ -105,7 +109,7 @@ export default {
       else if(this.two) {
         this.two = false;
         this.three = true;
-        this.currentLink = 'http://coffeefe.co'
+        this.currentLink = 'https://elmspeakers.com/'
         projectTwo.classList.remove('button-active');
         projectTwo.classList.add('shrink');
         projectTwo.classList.add('button-inactive');
@@ -123,7 +127,7 @@ export default {
       if(this.two) {
         this.two = false;
         this.one = true;
-        this.currentLink = "https://music-lovers-app.herokuapp.com/"
+        this.currentLink = "http://www.developersquiz.com/"
         projectDos.classList.remove('button-active');
         projectDos.classList.add('shrink');
         projectDos.classList.add('button-inactive');
@@ -135,7 +139,7 @@ export default {
       else if(this.three) {
         this.two = true;
         this.three = false;
-        this.currentLink = 'https://elmspeakers.com/'
+        this.currentLink = 'https://music-lovers-app.herokuapp.com/'
         projectTres.classList.remove('button-active');
         projectTres.classList.add('shrink');
         projectTres.classList.add('button-inactive');
@@ -378,6 +382,27 @@ h3 {
   top: 180px;
 }
 
+.gql {
+   height: 40px;
+    width: auto;
+    left: 12vw;
+    top: -16px;
+}
+
+.ts {
+  height: 40px;
+  width: auto;
+  left: 14vw;
+  top: -16px;
+}
+
+.styled {
+  height: 40px;
+  width: auto;
+  left: 16vw;
+  top: -16px;
+}
+
 .rails {
   height: 48px;
   width: auto;
@@ -393,10 +418,10 @@ h3 {
 }
 
 .sql {
-  height: 56px;
+  height: 52px;
   width: auto;
   left: 14vw;
-  top: -8px;
+  top: -16px;
 }
 
 .material {
@@ -410,7 +435,7 @@ h3 {
   height: 48px;
   width: auto;
   left: 10vw;
-  top: -16px;
+  top: -24px;
 }
 
 .bs {
