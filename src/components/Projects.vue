@@ -35,7 +35,7 @@
     </div>
     <div class="project-coffee-stack invisible"  id="p3">
       <div class="laptop">
-        <video loop autoplay class="laptop-screen">
+        <video loop autoplay muted class="laptop-screen" id="vid">
 
             <source src="../assets/elmspeakers.mp4"
                     type="video/mp4">
@@ -98,6 +98,7 @@ export default {
       let tech1 = document.getElementById('tech-dq');
       let tech2 = document.getElementById('tech-ml');
       let tech3 = document.getElementById('tech-elm');
+      let vid = document.getElementById('vid');
 
       if(this.one) {
         this.one = false;
@@ -117,6 +118,7 @@ export default {
         projectTwo.classList.remove('shrink');
         projectTwo.classList.add('button-active');
         projectTwo.classList.add('grow');
+        vid.play();
       }
       else if(this.two) {
         this.two = false;
