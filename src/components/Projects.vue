@@ -2,7 +2,7 @@
 <div>
   <div class="projects-wrapper" v-scroll-reveal.reset="{delay: 80}">
     <h3 class="few" v-scroll-reveal.reset="{delay: 60}"><span class="here" id="projects">Here </span>are a few of my projects</h3>
-    <div class="project-ml-stack visible" v-if="one" id="p1">
+    <div class="project-ml-stack visible" id="p1">
       <!-- <div class="laptop">
         <video loop autoplay class="laptop-screen">
 
@@ -15,17 +15,17 @@
       </div> -->
       <img class="laptop-right" src="../assets/developersquiz-laptop.png" alt="laptop screenshot">
       <img class="phone-right" src="../assets/developers-phone.jpg" alt="phone screenshot">
-        <div class="tech-stack">
+        <div class="tech-stack" id="tech-dq">
         <img class="tech react" src="../assets/react.png" alt="rails logo">
         <img class="tech gql" src="../assets/graphqlPink.png" alt="ruby logo">
         <img class="tech ts" src="../assets/ts.png" alt="postgres logo">
         <img class="tech styled" src="../assets/styledComponentsLogo.png" alt="materialize logo">
       </div>
     </div>
-    <div class="project-elm-stack " v-if="two" id="p2">
+    <div class="project-elm-stack invisible"  id="p2">
       <img class="laptop-right" src="../assets/music-lovers-laptop.png" alt="laptop screenshot">
       <img class="phone-right" src="../assets/music-lovers-phone-smaller.jpg" alt="phone screenshot">
-        <div class="tech-stack">
+        <div class="tech-stack" id="tech-ml">
         <img class="tech rails" src="../assets/rails.png" alt="rails logo">
         <img class="tech ruby" src="../assets/ruby.png" alt="ruby logo">
         <img class="tech sql" src="../assets/postgresql.png" alt="postgres logo">
@@ -33,7 +33,7 @@
       </div>
       
     </div>
-    <div class="project-coffee-stack " v-if="three" id="p3">
+    <div class="project-coffee-stack invisible"  id="p3">
       <div class="laptop">
         <video loop autoplay class="laptop-screen">
 
@@ -45,7 +45,7 @@
         <img class="laptop-right" src="../assets/mac-laptop.png" alt="laptop screenshot">
       </div>
       <img class="phone-right" src="../assets/elm-phone.jpg" alt="phone screenshot">
-      <div class="tech-stack">
+      <div class="tech-stack" id="tech-elm">
       <img class="tech react" src="../assets/react.png" alt="react logo">
       <img class="tech bs" src="../assets/bootstrap.png" alt="bootstrap logo">
       <img class="tech js" src="../assets/js.png" alt="javascript logo">
@@ -92,10 +92,22 @@ export default {
       let projectOne = document.getElementById('project-one')
       let projectTwo = document.getElementById('project-two')
       let projectThree = document.getElementById('project-three')
+      let p1 = document.getElementById('p1');
+      let p2 = document.getElementById('p2');
+      let p3 = document.getElementById('p3');
+      let tech1 = document.getElementById('tech-dq');
+      let tech2 = document.getElementById('tech-ml');
+      let tech3 = document.getElementById('tech-elm');
 
       if(this.one) {
         this.one = false;
         this.two = true;
+        p2.classList.remove('invisible');
+        p2.classList.add('fade-in');
+        p1.classList.add('fade-out');
+        tech1.classList.add('fade-out');
+        tech1.classList.add('invisible');
+        tech2.classList.remove('invisible');
         this.currentLink = 'https://music-lovers-app.herokuapp.com/'
         this.currentProject = 'music_lovers'
         projectOne.classList.remove('button-active');
@@ -109,6 +121,14 @@ export default {
       else if(this.two) {
         this.two = false;
         this.three = true;
+        p3.classList.remove('invisible');
+        p3.classList.add('fade-in');
+        p2.classList.add('fade-out');
+        p1.classList.add('invisible');
+        tech2.classList.add('fade-out');
+        tech2.classList.add('invisible');
+        tech3.classList.remove('invisible');
+        tech3.classList.add('fade-in');
         this.currentLink = 'https://elmspeakers.com/'
         projectTwo.classList.remove('button-active');
         projectTwo.classList.add('shrink');
@@ -123,10 +143,26 @@ export default {
       let projectUno = document.getElementById('project-one')
       let projectDos = document.getElementById('project-two')
       let projectTres = document.getElementById('project-three')
+      let p_1 = document.getElementById('p1');
+      let p_2 = document.getElementById('p2');
+      let p_3 = document.getElementById('p3');
+      let tech_1 = document.getElementById('tech-dq');
+      let tech_2 = document.getElementById('tech-ml');
+      let tech_3 = document.getElementById('tech-elm');
+
 
       if(this.two) {
         this.two = false;
         this.one = true;
+        p_1.classList.remove('invisible');
+        p_1.classList.add('fade-in');
+        p_2.classList.remove('fade-in');
+        p_2.classList.add('fade-out');
+        p_2.classList.add('invisible');
+        tech_1.classList.add('fade-in');
+        tech_1.classList.remove('invisible');
+        tech_2.classList.add('fade-out');
+        tech_2.classList.add('invisible');
         this.currentLink = "http://www.developersquiz.com/"
         projectDos.classList.remove('button-active');
         projectDos.classList.add('shrink');
@@ -139,14 +175,24 @@ export default {
       else if(this.three) {
         this.two = true;
         this.three = false;
+        p_2.classList.remove('invisible');
+        p_2.classList.add('fade-in');
+        p_3.classList.remove('fade-in');
+        p_3.classList.add('fade-out');
+        p_3.classList.add('invisible');
+        tech_2.classList.add('fade-in');
+        tech_2.classList.remove('invisible');
+        tech_3.classList.add('fade-out');
+        tech_3.classList.add('invisible');
         this.currentLink = 'https://music-lovers-app.herokuapp.com/'
         projectTres.classList.remove('button-active');
         projectTres.classList.add('shrink');
+        projectTres.classList.remove('grow');
         projectTres.classList.add('button-inactive');
         projectDos.classList.remove('button-inactive');
         projectDos.classList.remove('shrink');
-        projectDos.classList.add('button-active')
-        projectDos.classList.add('grow')
+        projectDos.classList.add('button-active');
+        projectDos.classList.add('grow');
       }
     }
   }
@@ -237,6 +283,39 @@ h3 {
   right: 0%;
   bottom: 0%;
 }
+
+.invisible {
+  opacity: 0;
+}
+
+.fade-out {
+  animation: fadeOut 0.9s ease;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.9s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .grow {
   animation: grow .2s cubic-bezier(.73,.01,.96,.24) forwards;
